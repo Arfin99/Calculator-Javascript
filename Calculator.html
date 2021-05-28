@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="calLogic.js">
+
+    </script>
+
+</head>
+<body>
+    <div class="centerCal">
+        <form name="cal" id="cal">
+            <input type="text" name="" value="Calculator" id="app" readonly>
+            <input type="text" name="display_answer" id="display">
+
+            <div class="toplayer">
+                <input type="button" name="" class="operator" id="clearbtn" value="c" onclick="funcClear()">
+                <input type="button" name="" class="operator" id="equation" value="=" onclick="solveEquation()">
+
+            </div>
+
+            <div class="digitlayer">
+                <input type="button" name="btn7" class="digit" value="7" onclick="funcDisplay(btn7.value)">
+                <input type="button" name="btn8" class="digit" value="8" onclick="funcDisplay(btn8.value)">
+                <input type="button" name="btn9" class="digit" value="9" onclick="funcDisplay(btn9.value)">
+                <input type="button" name="btnMulti" class="operator" value="*" onclick="funcDisplay(btnMulti.value)">
+
+
+            </div>
+
+            <div class="digitlayer">
+                <input type="button" name="btn4" class="digit" value="4" onclick="funcDisplay(btn4.value)">
+                <input type="button" name="btn5" class="digit" value="5" onclick="funcDisplay(btn5.value)">
+                <input type="button" name="btn6" class="digit" value="6" onclick="funcDisplay(btn6.value)">
+                <input type="button" name="btnSub" class="operator" value="-" onclick="funcDisplay(btnSub.value)">
+
+
+            </div>
+
+            <div class="digitlayer">
+                <input type="button" name="btn1" class="digit" value="1" onclick="funcDisplay(btn1.value)">
+                <input type="button" name="btn2" class="digit" value="2" onclick="funcDisplay(btn2.value)">
+                <input type="button" name="btn3" class="digit" value="3" onclick="funcDisplay(btn3.value)">
+                <input type="button" name="btnAdd" class="operator" value="+" onclick="funcDisplay(btnAdd.value)">
+
+
+            </div>
+
+            <div class="digitlayer">
+                <input type="button" name="btnDeci" class="operator" value="." onclick="funcDisplay(btnDeci.value)">
+                <input type="button" name="btn0" class="digit" value="0" onclick="funcDisplay(btn0.value)">
+                <input type="button" name="btnRem" class="operator" value="%" onclick="funcDisplay(btnRem.value)">
+                <input type="button" name="btnDiv" class="operator" value="/" onclick="funcDisplay(btnDiv.value)">
+
+
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+</html>
